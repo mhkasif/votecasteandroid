@@ -111,6 +111,6 @@ public class ValuesUtil {
     }
 
     public static boolean getUseManualCapture(Activity a) {
-        return ((CheckBox) a.findViewById(R.id.useManualCapture)).isChecked();
+        return true;
     }
 }
