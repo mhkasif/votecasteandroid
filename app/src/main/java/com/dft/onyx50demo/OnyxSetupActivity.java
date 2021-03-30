@@ -182,7 +182,7 @@ public class OnyxSetupActivity extends Activity implements ProviderInstaller.Pro
         LayoutParams layoutParams = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
         addContentView(fingerprintView, layoutParams);
         startOnyxButton = findViewById(R.id.start_onyx);
-        startOnyxButton.setEnabled(true);
+        startOnyxButton.setEnabled(false);
         startOnyxButton.bringToFront();
         flashBtn=findViewById(R.id.flashBtn);
 
@@ -212,7 +212,7 @@ public class OnyxSetupActivity extends Activity implements ProviderInstaller.Pro
     private void showAlertDialog(OnyxError onyxError) {
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(activity);
         alertDialogBuilder.setCancelable(true);
-        alertDialogBuilder.setTitle("Onyx Error");
+        alertDialogBuilder.setTitle("Votechain Error");
         alertDialogBuilder.setMessage(onyxError.getErrorMessage());
         alertDialogBuilder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
             @Override
